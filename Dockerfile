@@ -6,6 +6,6 @@ RUN yum clean all
 COPY start.sh /
 VOLUME /var/lib/couchdb
 VOLUME /opt/couchdb/etc/local.d
-EXPOSE 5489
+EXPOSE 5984
 CMD ["/start.sh"]
 
