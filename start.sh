@@ -1,6 +1,7 @@
 #!/bin/bash
 if [[ -n "$_TZ" ]]
 then
-	ln -s /etc/localtime $_TZ
+        ln -sf /usr/share/zoneinfo/$_TZ /etc/localtime
 fi
-/opt/couchdb/erts-9.3.3.14/bin/epmd
+/opt/couchdb/bin/couchdb
+
